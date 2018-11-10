@@ -32,6 +32,7 @@ public class Prefs {
 
     public Prefs(Context context) {
         prefs = PreferenceManager.getDefaultSharedPreferences(context.getApplicationContext());
+        initiate();
     }
 
     private void initiate() {
@@ -46,12 +47,13 @@ public class Prefs {
 
     public ArrayList<TimeData> getTimeDataList () {
         ArrayList<TimeData> data = new ArrayList<TimeData>();
-        if(!data.equals("")) {
+        if(!timeDataList.equals("")) {
             Gson gson = new Gson();
             Type collectionType = new TypeToken<List<TimeData>>() {
             }.getType();
             data = gson.fromJson(timeDataList, collectionType);
         }
+        save();
         return data;
     }
 }

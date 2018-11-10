@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     tools:context="com.ashushgmail.avihay.laborpains.MainActivity">
 
+    <View
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"/>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/time_recycler"
         android:scrollbars="vertical"
