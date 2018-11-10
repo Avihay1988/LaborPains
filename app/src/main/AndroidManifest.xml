@@ -3,6 +3,7 @@
     package="com.ashushgmail.avihay.laborpains">
 
     <application
+        android:name="com.ashushgmail.avihay.laborpains.Application"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
